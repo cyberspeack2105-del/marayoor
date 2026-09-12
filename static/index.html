@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kanthalloor Wilds - Ethereal Tourism Experience</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#b4cdb8",
+                        "surface-container-low": "#f5f3f3",
+                        "tertiary": "#000000",
+                        "secondary-fixed": "#ffdea3",
+                        "tertiary-container": "#1b1c1b",
+                        "on-secondary-fixed-variant": "#5c4200",
+                        "on-background": "#1b1c1c",
+                        "inverse-primary": "#b4cdb8",
+                        "surface-container": "#efeded",
+                        "on-secondary-container": "#785a19",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dbd9d9",
+                        "inverse-surface": "#303030",
+                        "tertiary-fixed-dim": "#c7c6c5",
+                        "tertiary-fixed": "#e4e2e1",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fbf9f8",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-high": "#eae8e7",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "outline": "#737972",
+                        "on-tertiary-container": "#848483",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-tint": "#4d6452",
+                        "background": "#fbf9f8",
+                        "on-surface-variant": "#434843",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#0a2012",
+                        "primary-container": "#0a2012",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#364c3c",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e4e2e2",
+                        "primary-fixed": "#cfe9d3",
+                        "surface": "#fbf9f8",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-tertiary-fixed-variant": "#464746",
+                        "on-surface": "#1b1c1c",
+                        "secondary": "#775a19",
+                        "outline-variant": "#c3c8c1",
+                        "on-primary-container": "#728a77",
+                        "secondary-fixed-dim": "#e8c176",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#1b1c1b",
+                        "secondary-container": "#fdd587"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "12px",
+                        "margin-desktop": "64px",
+                        "stack-xs": "4px",
+                        "stack-xl": "80px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .ken-burns:hover img {
+            transform: scale(1.05);
+        }
+        .image-zoom-container {
+            overflow: hidden;
+        }
+        .image-zoom-container img {
+            transition: transform 0.7s ease;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation (Shared Component JSON Source of Truth) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface-container-highest/70 backdrop-blur-md shadow-sm border-b border-white/10 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-tertiary dark:text-on-tertiary tracking-tight" href="#">Kanthalloor Wilds</a>
+<div class="hidden lg:flex items-center gap-gutter">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 dark:hover:bg-tertiary-container/50 px-3 py-2 rounded-lg" href="#about">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 dark:hover:bg-tertiary-container/50 px-3 py-2 rounded-lg" href="#packages">Packages</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 dark:hover:bg-tertiary-container/50 px-3 py-2 rounded-lg" href="#jeep-safari">Jeep Safari</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 dark:hover:bg-tertiary-container/50 px-3 py-2 rounded-lg" href="#tour-places">Tour Places</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 dark:hover:bg-tertiary-container/50 px-3 py-2 rounded-lg" href="#gallery">Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low/50 dark:hover:bg-tertiary-container/50 px-3 py-2 rounded-lg" href="#contact">Contact Us</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-[0_8px_24px_rgba(6,27,14,0.08)]" href="#book">Book Now</a>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" class="lg:hidden text-on-surface p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Panel -->
+<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-margin-mobile py-stack-md flex flex-col gap-4 shadow-lg absolute w-full left-0 top-full" id="mobile-menu">
+<a class="font-body-lg text-body-lg text-on-surface py-2 border-b border-surface-variant" href="#about">About</a>
+<a class="font-body-lg text-body-lg text-on-surface py-2 border-b border-surface-variant" href="#packages">Packages</a>
+<a class="font-body-lg text-body-lg text-on-surface py-2 border-b border-surface-variant" href="#jeep-safari">Jeep Safari</a>
+<a class="font-body-lg text-body-lg text-on-surface py-2 border-b border-surface-variant" href="#tour-places">Tour Places</a>
+<a class="font-body-lg text-body-lg text-on-surface py-2 border-b border-surface-variant" href="#gallery">Gallery</a>
+<a class="font-body-lg text-body-lg text-on-surface py-2" href="#contact">Contact Us</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="A breathtaking, wide-angle cinematic shot of misty mountains in Kanthalloor during early morning. Lush green rolling hills stretch into the distance, layered with soft, ethereal white fog. Tall pine trees and terraced fruit orchards are visible in the foreground. The lighting is soft and diffused, creating a serene, premium, and tranquil mood that perfectly embodies the pristine high-altitude landscapes of the Western Ghats. Subtle light mode aesthetic with deep greens and misty greys." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2VKeCXsgVEnOi5rhxG8H8-saIpWGqAdcbNG3BDH7KA4Qia-P6ifpm-vwXCv-8wy-zDFB1yll5wJ9-oJ5S0di7qFHofnICq4EGoBucZmIZtFcBRl2oH5F295rwhE2KEzzDgqEi7-pCx4W7w07i0i3M6Jd6PVyVkuBb54mIeKxm1VhKSA454CUbc8lj0VUHxf0VXcnFYwbFUTAfRvtgxHh3bBZ0sB7tysth9WX3glgf7-Zs-x2pBGeW')"></div>
+<!-- Overlay -->
+<div class="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-transparent to-surface"></div>
+<div class="relative z-20 text-center px-margin-mobile md:px-margin-desktop max-w-[900px] mx-auto mt-20">
+<span class="inline-block px-4 py-1.5 rounded-full glass-panel text-on-surface font-label-md text-label-md mb-stack-md">Explore The Unseen Kerala</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-stack-md text-balance drop-shadow-lg">Where The Mist Meets The Orchards</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-stack-lg max-w-2xl mx-auto drop-shadow-md">Experience the ethereal beauty of Kanthalloor. A premium retreat into pristine wilderness, cool climates, and serene landscapes.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-[0_8px_32px_rgba(6,27,14,0.15)] flex items-center justify-center gap-2" href="#packages">
+                        Book Your Adventure
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto glass-panel text-white font-label-md text-label-md px-8 py-4 rounded-full hover:bg-white/20 transition-all flex items-center justify-center" href="#tour-places">
+                        Explore Destinations
+                    </a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-margin-desktop items-center">
+<div class="order-2 lg:order-1 image-zoom-container rounded-[2rem] shadow-[0_24px_48px_rgba(0,0,0,0.05)] h-[500px]">
+<img alt="Kanthalloor Orchards" class="w-full h-full object-cover rounded-[2rem]" data-alt="A beautifully composed, high-fidelity close-up shot of an organic apple orchard in Kanthalloor. Ripe red apples hang from branches covered in morning dew. The background is softly blurred (bokeh) showing misty green mountains. The lighting is soft morning sunlight, emphasizing the fresh, premium, and tranquil nature of the region. Light mode aesthetic with vibrant reds and deep earthy greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh-WWoPlhgHVycuI7jMSli1yygugBCa54ZaaB5x3bTbJReewTFowIOBy2N0t2z50wZh_46NssnrmslhNeKtECa80zSlObnyYf0hJ5EtEO41Bo_yCztBdIqBpvbrUCYMDan2Mw814YIFXeA0dqMKS_AXHR8jgIVez0nfo5JTJvbL-JLaiSyDxj5yvjFxR19hKl3uYrnm0sfg8nbs8Uat8CgOLPsRGbmPZSty1RZy4vAz6prZ_piawVv"/>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-md">A Sanctuary Above the Clouds</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                        Tucked away in the eastern slopes of the Western Ghats, Kanthalloor is a pristine haven untouched by the rush of modern life. Famous for its cool, salubrious climate and diverse agricultural marvels, it stands as the only place in Kerala where apples flourish.
+                    </p>
+<p class="font-body-md text-body-md text-outline mb-stack-lg">
+                        Wander through terraced farms of strawberries, plums, and exotic vegetables. Breathe in the crisp mountain air and let the tranquil beauty of our misty valleys rejuvenate your soul.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="ac_unit">ac_unit</span> Cool Climate
+                        </span>
+<span class="px-4 py-2 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="park">park</span> Fruit Orchards
+                        </span>
+<span class="px-4 py-2 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="landscape">landscape</span> Mist Views
+                        </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Tour Packages Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="packages">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-xl">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-sm">Curated Tour Packages</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Discover the perfect itinerary for your escape into nature. Handpicked experiences for every kind of traveler.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Package Card 1 -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-surface-variant flex flex-col">
+<div class="h-48 overflow-hidden image-zoom-container">
+<img alt="Honeymoon Special" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdVei6C9BAnH1IOy3Wox5vtW6t0TXPUSfduZmZdHYFnsRreYlhothjCFvhKng_tgNMwswapYfk-4NbehYGQlZhqEl_Nej8fREo16grEhXiXyXx1OPRcjXqhwMplLH_K3gtkTxGsRxWN5UWEJ6D8TcrktOTNNZUhPiE5Ge70KoQ-myrLNYPf8Yc2a3AeXuxtikQ2CRvY0R48YgweedPknpvY5zArVTUWOtB8lewPsU0XupnS_-kmJ6W"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-2xl text-primary">Honeymoon Special</h3>
+<span class="font-label-md bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs">3N/4D</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">A romantic getaway featuring private orchard walks, candlelight dinners, and premium secluded stays.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-caption text-outline">Starting from</span>
+<span class="font-label-md text-lg text-primary">₹24,999</span>
+</div>
+<button class="bg-primary text-on-primary font-label-md px-5 py-2 rounded-full hover:bg-primary-container transition-colors">View Itinerary</button>
+</div>
+</div>
+</div>
+<!-- Package Card 2 -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-surface-variant flex flex-col">
+<div class="h-48 overflow-hidden image-zoom-container">
+<img alt="Family Adventure" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0HwqSPaavaSLdgf_DUvX3gCr7kIH5Pyg0XjlpXbzY43te7qGuOuPDgQLw-M4vRxmy7cwQtl9PcprtowpZuHiC_N75uK0v3Q6dYdt-UjOAGMt57DXDwzCFzg3novrmCqb14WgprrH35OO3Ax1dZIzzep0wcB2tdtrXFDJ-Y76rsayTt1ANLSnibRprmOZH-CTZancWEh-FNoCxePl5Py2a3XwCWvxTnSfes4za0PxBf7-3YXwEUjZ_"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-2xl text-primary">Family Adventure</h3>
+<span class="font-label-md bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs">4N/5D</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Fun-filled activities including jeep safaris, strawberry picking, and guided nature trails for all ages.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-caption text-outline">Starting from</span>
+<span class="font-label-md text-lg text-primary">₹35,500</span>
+</div>
+<button class="bg-primary text-on-primary font-label-md px-5 py-2 rounded-full hover:bg-primary-container transition-colors">View Itinerary</button>
+</div>
+</div>
+</div>
+<!-- Package Card 3 -->
+<div class="bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-surface-variant flex flex-col">
+<div class="h-48 overflow-hidden image-zoom-container">
+<img alt="Weekend Escape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0aRGUyacQlW7BKqR2wduf_Fr0dEbKdeiCfe8r16Zbf_iEX2f1pAZwDOJECKv5S_3tiYqpnBnnhYLfL-1qur2JyohcPX0YAkC0xYLf0cGDno-HonQgI_w7_okPzKfNwSRb-p3ipqx4UkNppAQH1nSH-V1fATCvnyanXiLU-rTm3MLtRmBg21CwNXr81zXWAHk7s6vJwmJ9Esg0Tnx7ONfzaolvefMloZBTelsdTCfHQ9LcdoBByGBu"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-2xl text-primary">Weekend Escape</h3>
+<span class="font-label-md bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs">2N/3D</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">A quick, rejuvenating break with sightseeing to waterfalls, viewpoints, and local farm visits.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex flex-col">
+<span class="font-caption text-outline">Starting from</span>
+<span class="font-label-md text-lg text-primary">₹12,000</span>
+</div>
+<button class="bg-primary text-on-primary font-label-md px-5 py-2 rounded-full hover:bg-primary-container transition-colors">View Itinerary</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Premier Resorts & Stays Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface" id="stays">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-xl gap-4">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-sm">Premier Resorts &amp; Stays</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Experience unmatched comfort nestled amidst the misty hills. Hand-selected properties offering luxury and tranquility.</p>
+</div>
+<a class="font-label-md text-primary flex items-center gap-1 hover:underline" href="#">View All Stays <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Stay Card 1 -->
+<div class="group relative rounded-3xl overflow-hidden h-[400px]">
+<img alt="Valley View Eco Lodge" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT-sRTlthYFIux42zmnMvo8afuQ13XTtsPA7qtyeYvk7-xOD3WP7iatksVZWHWkMAXs9n1Uw50Kq8QrnosZL-JQpYCXbXGC3aztl9m1aCDF7iGKxwnIdKVni5hUEpKqZQ1atwwKUBnHkrcPXHWtfn-WQKq3i7feUpo9I9QRof3X02Gyj7UpjvfHdEomHMDRNQ0i4mMQntXrhkxLC4uTDuHOlOlDJSb5aVBzUKl55ccCFrFg6vjZYHH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+<div class="flex gap-2 mb-3">
+<span class="bg-surface/20 backdrop-blur-md text-white font-caption px-3 py-1 rounded-full border border-white/20">Infinity Pool</span>
+<span class="bg-surface/20 backdrop-blur-md text-white font-caption px-3 py-1 rounded-full border border-white/20">Eco-Friendly</span>
+</div>
+<h3 class="font-headline-md text-3xl text-white mb-2">Valley View Eco Lodge</h3>
+<p class="font-body-md text-white/80 mb-6 max-w-md">Sustainable luxury with panoramic views of the Western Ghats from every room.</p>
+<button class="bg-white text-primary font-label-md px-6 py-3 rounded-full hover:bg-surface-container transition-colors w-fit shadow-lg">Book Stay</button>
+</div>
+</div>
+<!-- Stay Card 2 -->
+<div class="group relative rounded-3xl overflow-hidden h-[400px]">
+<img alt="Orchard Retreat" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ7aafxfhwvQrl3XpWKwVLvT0A-LLjQqGgzbxLpjUQYuPSjv8JaoCgKjOXURA3bwmWzBWXHstgVjsad619-ooeFpwvMF2dpQepsxczrNP77qDJR8YvM1WNSIT41uRGJ1-zCHWoWfsuk7wS2NR7B104Hm3orlgLaOzMohT9dfHSaMnNcoOi1mk7ABngGaphnp6vWKQ-EAAsWH7u6hXNyVEfwzt_xX5l5RA40xV9B13M1kx6LjSk3bN0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end">
+<div class="flex gap-2 mb-3">
+<span class="bg-surface/20 backdrop-blur-md text-white font-caption px-3 py-1 rounded-full border border-white/20">Private Balcony</span>
+<span class="bg-surface/20 backdrop-blur-md text-white font-caption px-3 py-1 rounded-full border border-white/20">Farm-to-Table</span>
+</div>
+<h3 class="font-headline-md text-3xl text-white mb-2">The Orchard Retreat</h3>
+<p class="font-body-md text-white/80 mb-6 max-w-md">Wake up to the smell of fresh apples and mist rolling through your private balcony.</p>
+<button class="bg-white text-primary font-label-md px-6 py-3 rounded-full hover:bg-surface-container transition-colors w-fit shadow-lg">Book Stay</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Traveler's Gallery Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="gallery">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-xl">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-stack-sm">Traveler's Gallery</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Glimpses of paradise captured by those who wandered into the ethereal beauty of Kanthalloor.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+<div class="rounded-xl overflow-hidden image-zoom-container col-span-2 row-span-2">
+<img alt="Misty Mountains" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6_XQX9GMYx8cb_Ar1RHzfRiD4n_Zdy0O4rOXVU_PAV8lHaudvoJWpC7IlP24_voMeyxO5yWAMtxCjXHNKHcYpy8yCspogZox9Sz8E1EQ752-M5RlYbe8z-jGjA2AbJhsdwTZNlGL2QrUFQLugXSJdNs0kRQmDLnXvofLchp_Ke_5q7G9H0x-2NgORn6531eTJA4uT2MNWUpXp-Ov95dgBwY_ZnHeqAFnluTaDh9ErfjqA8Xla2C5"/>
+</div>
+<div class="rounded-xl overflow-hidden image-zoom-container">
+<img alt="Mountain View" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaXsqTuTy82e7l0I5ryD5Y0j3DIgPeBQ3s0nN_o_Az7s7FEHiN0LlshMX0STn4CRCPX7kNFtYHrVlp0UuLHnVcXCgNpyRqA4Incuftnb8RUt6PxIdnRsrxB_Ei9PNsqnS-JOEGjBz325u_RV19fs3Kzv3KH8l3NgRP94KCqooaqoFDD6fcK1CKDFIs8hrQoafTg2jgKGk8BimULWTwU30KFaOJOVNMV7SnqLMjGJVywihJrHJLs1-G"/>
+</div>
+<div class="rounded-xl overflow-hidden image-zoom-container">
+<img alt="Local Fauna" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS-PSGMHsX8Wpeo9sNSWKW_M89rXifgyNDsy9mxtKQ9VjY8W21yeqtSQccLoWBxUnTv0rlR4OU6e8fMu02bFsGZqsobBjJGD0HI1C7i-gUOMtbeMq37LgC7lWM0ACwP7nqQZY4HGAS527s-DFg2HMIKe69t9Y8w8-wuSIVuvn93CM3GOz2ln8DsCP7O26PgHDvVJSuiWTJd8Il4Tlr_Ep10YY-owRl8WI0y5_zUXnI3H4ILdjjGVzt"/>
+</div>
+<div class="rounded-xl overflow-hidden image-zoom-container col-span-2 md:col-span-1 row-span-2">
+<img alt="Orchard Details" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkJTHKCNBwoEvmGLNPpX578T1i-k-bi7HYST8XR2k6lZhv2_2k4WEvVBSK_fwf4lBSCBYRmocnlPE9rGGxHf8OJJWGciBpW1BgZxhCZ85yx6XLfBtveuukT6z7NP4Kdmoycy8MdpC3GvrMF6s4RA4o74pIaWKbT4acIxOUTPkO8D19w-fAXuCTD7hjjLRzmbOAN-22yuVuMJo6rXULHaBlxT6uoBB8vZC1WkHVdt4S8fkHVxtuVLEp"/>
+</div>
+<div class="rounded-xl overflow-hidden image-zoom-container">
+<img alt="Morning Dew" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDONP19Va8UWT35kll86hTb9gr3N62HoEfFq7IZRrVk4XIoL7jkN6P1D_s_i8RnLbVBO4LTPvAhMnCk0r3UBXnAdKsohMj8MY_xM0kI9_HhlNyD0H57FNwuGP5mH-FTvNgqbt4Lyp1R8g4VVBJ_D41xd5doWrIcG9Y5JIjGyRZBbLgo-u_SiCX5P4S5JXiBWNlsLkVt_v6lRYLKgy5JPYKPQ4oTL3ePJZne3tihZKzbmHgFeoDut9tq"/>
+</div>
+<div class="rounded-xl overflow-hidden image-zoom-container col-span-2 md:col-span-1">
+<img alt="Landscape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKAJZYN3rEFN44YlwsBQVIzHDzK8k73_W2YuLBSjz_3GRwltYww46dhj5mZ8WzDfDGpA-0qgS1AspQuqYZxtl4djPyzNW2cab1fpMhtcQFlD1T8dQMs03_0oQG61upJIDSVcCn9tHlbZLIaSHIdt3EmlZeA_iCbdEeHEAiuvaTYUTtIDlHodk3mIByGzVlHVL-kUjRe9-t1QhxavXhpDgmZyfcWXItwui1KlvbQy1Mu7o5Bn6qDgET"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer (Shared Component JSON Source of Truth) -->
+<footer class="w-full bg-tertiary dark:bg-tertiary-container text-on-tertiary dark:text-on-tertiary-container">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-stack-lg gap-gutter max-w-container-max mx-auto">
+<div class="text-center md:text-left">
+<span class="block font-headline-md text-headline-md text-on-tertiary mb-2">Kanthalloor Wilds</span>
+<p class="font-caption text-caption">© 2024 Kanthalloor Tourism. Crafted for the wandering soul.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-caption text-caption">
+<a class="text-on-tertiary-container/80 hover:text-on-tertiary hover:underline transition-all opacity-90 hover:opacity-100" href="#">About Me</a>
+<a class="text-on-tertiary-container/80 hover:text-on-tertiary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-on-tertiary-container/80 hover:text-on-tertiary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-on-tertiary-container/80 hover:text-on-tertiary hover:underline transition-all opacity-90 hover:opacity-100" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- Floating Actions -->
+<div class="fixed bottom-margin-mobile right-margin-mobile flex flex-col gap-3 z-40">
+<a aria-label="Call Us" class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:bg-surface-dim transition-colors" href="tel:+1234567890">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</a>
+<a aria-label="WhatsApp" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_12px_28px_rgba(37,211,102,0.3)] hover:scale-105 transition-transform" href="https://wa.me/1234567890">
+<span class="material-symbols-outlined text-2xl" data-icon="chat">chat</span>
+</a>
+</div>
+<script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = menuBtn.querySelector('.material-symbols-outlined');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.textContent = 'menu';
+                    icon.setAttribute('data-icon', 'menu');
+                } else {
+                    icon.textContent = 'close';
+                    icon.setAttribute('data-icon', 'close');
+                }
+            });
+        }
+    </script>
+</body></html>

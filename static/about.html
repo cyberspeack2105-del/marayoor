@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Kanthalloor - Explore Kanthalloor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#1b3022",
+                        "primary": "#061b0e",
+                        "primary-fixed-dim": "#b4cdb8",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "secondary-fixed": "#ffdea5",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#261900",
+                        "tertiary-container": "#053405",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1b1c1c",
+                        "outline-variant": "#c3c8c1",
+                        "on-tertiary-fixed": "#002201",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-primary-fixed": "#0b2013",
+                        "tertiary": "#001d01",
+                        "inverse-on-surface": "#f2f0f0",
+                        "inverse-primary": "#b4cdb8",
+                        "surface-variant": "#e4e2e2",
+                        "on-secondary-container": "#785a1a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#d0e9d4",
+                        "on-tertiary-fixed-variant": "#23501e",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fbf9f8",
+                        "on-primary-container": "#819986",
+                        "error-container": "#ffdad6",
+                        "secondary": "#775a19",
+                        "background": "#fbf9f8",
+                        "surface-bright": "#fbf9f8",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#364c3c",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dbd9d9",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-container-high": "#eae8e7",
+                        "outline": "#737973",
+                        "on-surface": "#1b1c1c",
+                        "secondary-container": "#fed488",
+                        "on-tertiary-container": "#6f9f64",
+                        "surface-container": "#efeded",
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-tint": "#4d6453",
+                        "on-surface-variant": "#434843",
+                        "inverse-surface": "#303030",
+                        "tertiary-fixed-dim": "#a1d494",
+                        "tertiary-fixed": "#bcf0ae"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "stack-section": "120px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "button": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-md": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "button": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(6, 27, 14, 0.08);
+        }
+        
+        .glass-panel {
+            background: rgba(251, 249, 248, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Fade in animation for elements */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-surface/70 backdrop-blur-[30px] shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-md text-display-md text-primary dark:text-primary-fixed tracking-tight" href="{{DATA:SCREEN:SCREEN_3}}">Kanthallur Tourism</a>
+<nav class="hidden md:flex gap-8 items-center font-label-caps text-label-caps">
+<a class="text-secondary border-b-2 border-secondary pb-1 scale-95 active:scale-90 transition-transform" href="{{DATA:SCREEN:SCREEN_2}}">About</a>
+<a class="text-primary dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="{{DATA:SCREEN:SCREEN_11}}">Places</a>
+<a class="text-primary dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="{{DATA:SCREEN:SCREEN_7}}">Things to Do</a>
+<a class="text-primary dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="{{DATA:SCREEN:SCREEN_10}}">Guide</a>
+<a class="text-primary dark:text-on-surface-variant hover:text-secondary transition-colors duration-300 scale-95 active:scale-90 transition-transform" href="{{DATA:SCREEN:SCREEN_9}}">Accommodation</a>
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="Language" class="hidden md:flex items-center justify-center text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</button>
+<a class="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors scale-95 active:scale-90 inline-block" href="{{DATA:SCREEN:SCREEN_4}}">Plan Your Trip</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[921px] min-h-[600px] w-full mt-20 flex items-end pb-margin-desktop px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A breathtaking, wide-angle landscape photograph of the Kanthalloor hills at sunrise. Rolling mist covers the verdant green valleys, with stepped agricultural terraces visible in the foreground. High-resolution, editorial style reminiscent of National Geographic, emphasizing natural beauty, tranquility, and prestige. The lighting is soft, golden morning light casting long, elegant shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcigaXHh3_VPsMRIH2b23cVh81ivABLVquegB3ueIQtUt_XjOedbt9eXDa-o22BbTtc2wfXhM84qX9vmaJf5QhqInL9p72Od0y5Hp3bN4vhkojWy43j1UTYuK0wyhy8K8-HKniVxjGiIiDaysk3IeJarXQxkDQWFEw3pRD9a0HO_psXUCLIp6O23k4Nt1x60_0RhVGT0VdWFQBjDXvLLa5epbk2K9uBXmvqc8Wy-x4UZ3m4pMe49y3')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto w-full flex flex-col md:flex-row justify-between items-end gap-8 fade-up visible">
+<div class="max-w-3xl text-on-primary">
+<span class="font-label-caps text-label-caps text-secondary-fixed tracking-widest mb-4 block">THE ESSENCE OF KANTHALLOOR</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">About Kanthalloor – The Hidden Highland Paradise of Kerala</h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface opacity-90 max-w-2xl">Located in the Devikulam constituency of Idukki district, Kanthalloor rests at an altitude of over 5000 ft, nestled close to the majestic Anamudi Peak (7,000+ ft). This unique geographical positioning gives it a cool, temperate climate year-round.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<div class="w-12 h-12 rounded-full border border-inverse-on-surface/30 flex items-center justify-center backdrop-blur-sm cursor-pointer hover:bg-inverse-on-surface/10 transition-colors">
+<span class="material-symbols-outlined text-on-primary">arrow_downward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Geography & Nature / History & Heritage -->
+<section class="py-stack-section px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 fade-up visible">
+<div>
+<h2 class="font-display-md text-display-md text-primary mb-6">Geography &amp; Nature</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">Focus on the Western Ghats, Pambar River, and the lush landscape of sandalwood and jaggery fields.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The landscape is defined by its rolling hills, terraced farms, and the east-flowing Pambar River, which nourishes the rich soil and sustains the diverse ecosystem of this highland sanctuary.</p>
+</div>
+<div>
+<h2 class="font-display-md text-display-md text-primary mb-6">History &amp; Heritage</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">Detail the ancient dolmens (Muniyaras), the "Anju Nadu" history, and the indigenous Muthuvan tribe.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The region holds immense archaeological significance, dotted with ancient dolmens known locally as "Muniyaras" and fascinating cave paintings that offer a glimpse into prehistoric human habitation in the Western Ghats. Mention the Sri Rama Cave Temple and Shiva Temple.</p>
+</div>
+</div>
+</section>
+<!-- Culture & People / Education & Lifestyle -->
+<section class="py-stack-section bg-surface-container-low px-margin-mobile md:px-margin-desktop my-stack-section">
+<div class="max-w-container-max mx-auto fade-up">
+<div class="max-w-3xl mb-12">
+<h2 class="font-display-md text-display-md text-primary mb-6">Culture &amp; People</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Highlight the harmonious blend of communities (Hindus, Christians, Muslims) and the use of Tamil and Malayalam. The region is home to the indigenous Muthuvan tribe, who have preserved their unique customs and deep connection to the forest for generations.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface p-8 rounded-xl ambient-shadow">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="school">school</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Education &amp; Lifestyle</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Include the 98% literacy rate and the primary occupations of agriculture and cattle farming, sustaining a simple yet prosperous highland lifestyle.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Land of Fruits & Vegetables -->
+<section class="py-stack-section px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16 fade-up visible">
+<h2 class="font-headline-lg text-headline-lg md:font-display-md md:text-display-md text-primary mb-6">The Land of Fruits &amp; Vegetables</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Kanthalloor holds a unique distinction in Kerala as a haven for a diverse range of crops and seasonal fruits.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Garlic</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Potato</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Carrot</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Cardamom</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Coffee</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Apples</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Plums</span>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex items-center justify-center ambient-shadow">
+<span class="font-headline-sm text-headline-sm text-primary">Strawberries</span>
+</div>
+</div>
+</section>
+<!-- Tourism & Adventure / Travel Essentials -->
+<section class="py-stack-section bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 fade-up">
+<div>
+<h2 class="font-display-md text-display-md text-primary mb-6">Tourism &amp; Adventure</h2>
+<ul class="list-disc pl-5 font-body-lg text-body-lg text-on-surface-variant space-y-2">
+<li>Trekking</li>
+<li>Jeep Safaris</li>
+<li>Waterfall excursions</li>
+<li>Various accommodation types</li>
+</ul>
+</div>
+<div>
+<h2 class="font-display-md text-display-md text-primary mb-6">Travel Essentials</h2>
+<div class="space-y-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Accessibility</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Detail the road routes from Kerala (Munnar) and Tamil Nadu (Udumalpet).</p>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Mobile Network</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Mention BSNL and Jio reliability.</p>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Essential Facilities</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">List health centres, markets, and local offices.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-section bg-surface-container dark:bg-surface-container-high border-t border-outline-variant/30 mt-stack-section">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<a class="font-display-md text-display-md text-primary dark:text-primary-fixed tracking-tight mb-4 block" href="#">Kanthallur Tourism</a>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 mb-6">Experience the untouched beauty of Kerala's hidden highland sanctuary.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-on-surface mb-4">Quick Links</h4>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li class=""><a class="hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-on-surface mb-4">Legal</h4>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+<li class=""><a class="hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-headline-sm text-headline-sm text-primary dark:text-on-surface mb-4">Support</h4>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class=""><a class="hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Emergency Contacts</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-16 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 Kanthallur Tourism. All rights reserved.</p>
+<div class="flex gap-4">
+<!-- Social icons could go here -->
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for fade-up animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach((element) => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body></html>
