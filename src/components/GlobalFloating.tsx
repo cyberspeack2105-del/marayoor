@@ -125,16 +125,23 @@ export default function GlobalFloating() {
         <span className="absolute right-[calc(100%+10px)] top-1/2 -translate-y-1/2 hidden sm:block px-3 py-1 bg-[#112918]/90 text-white text-xs font-semibold rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
           WhatsApp Us
         </span>
+
+        {/* Outer pulse ring — green blink */}
+        <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping pointer-events-none" />
+        {/* Second ring — slower */}
+        <span className="absolute -inset-1.5 rounded-full bg-[#25D366] opacity-20"
+          style={{ animation: "ping 2.5s cubic-bezier(0,0,0.2,1) infinite 0.5s" }} />
+
         <a
           href={WA_URL}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
-          className="rounded-full bg-[#25D366] text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-200 border-2 border-white"
+          className="relative rounded-full bg-[#25D366] text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform duration-200 border-2 border-white"
           style={{
             width: "52px",
             height: "52px",
-            boxShadow: "0 6px 20px rgba(37, 211, 102, 0.5)",
+            boxShadow: "0 6px 24px rgba(37, 211, 102, 0.6)",
           }}
         >
           <i className="fab fa-whatsapp text-[28px] leading-none" />
@@ -146,16 +153,28 @@ export default function GlobalFloating() {
         <span className="absolute right-[calc(100%+10px)] top-1/2 -translate-y-1/2 hidden sm:block px-3 py-1 bg-[#112918]/90 text-white text-xs font-semibold rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
           {open ? "Close Call Menu" : "Call Us"}
         </span>
+
+        {/* Pulse ring on phone button */}
+        {!open && (
+          <span className="absolute inset-0 rounded-full bg-[#1a4329] opacity-35 pointer-events-none"
+            style={{ animation: "ping 2s cubic-bezier(0,0,0.2,1) infinite 1s" }} />
+        )}
+
+        {/* Notification dot — amber blink */}
+        {!open && (
+          <span className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-amber-400 border-2 border-white z-10 pointer-events-none animate-bounce" />
+        )}
+
         <button
           onClick={() => setOpen(!open)}
           aria-label={open ? "Close phone options" : "Call Kanthalloor Safari"}
-          className={`rounded-full text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 border-2 border-white ${
+          className={`relative rounded-full text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 border-2 border-white ${
             open ? "bg-[#112918]" : "bg-[#1a4329]"
           }`}
           style={{
             width: "48px",
             height: "48px",
-            boxShadow: "0 6px 20px rgba(26, 67, 41, 0.5)",
+            boxShadow: "0 6px 24px rgba(26, 67, 41, 0.6)",
           }}
         >
           {open ? (
