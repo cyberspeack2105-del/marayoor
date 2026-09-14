@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   description:
     "Get in touch with Kanthalloor Safari & Stay. Book Jeep Safari tours, reserve room stays, or contact our team directly via phone (+91 82811 41813) or WhatsApp.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/contact",
+    canonical: "https://www.ilovekanthalloor.com/contact",
   },
   openGraph: {
     title: "Contact Us | Kanthalloor Safari & Stay — Book Jeep Safari & Rooms",
     description:
       "Get in touch with Kanthalloor Safari & Stay. Book Jeep Safari tours, reserve room stays, or contact our team directly via phone (+91 82811 41813) or WhatsApp.",
-    url: "https://ilovekanthalloor.com/contact",
+    url: "https://www.ilovekanthalloor.com/contact",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/kanthal.png",
         width: 1200,
         height: 1200,
         alt: "Contact Kanthalloor Safari & Stay",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Kanthalloor Safari & Stay",
     description:
       "Book Jeep Safari and rooms in Kanthalloor, Kerala. Call +91 82811 41813 or WhatsApp.",
-    images: ["https://ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
   },
 };
 
@@ -43,13 +43,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Contact Us",
-      "item": "https://ilovekanthalloor.com/contact",
+      "item": "https://www.ilovekanthalloor.com/contact",
     },
   ],
 };

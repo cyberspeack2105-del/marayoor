@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   description:
     "Discover the best attractions in Kanthalloor and Marayoor: sandalwood forests, Muniyara dolmens, scenic mountain viewpoints, cascading waterfalls, and jaggery farms.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/destinations",
+    canonical: "https://www.ilovekanthalloor.com/destinations",
   },
   openGraph: {
     title: "Top Destinations & Attractions in Kanthalloor & Marayoor",
     description:
       "Discover the best attractions in Kanthalloor and Marayoor: sandalwood forests, Muniyara dolmens, scenic mountain viewpoints, cascading waterfalls, and jaggery farms.",
-    url: "https://ilovekanthalloor.com/destinations",
+    url: "https://www.ilovekanthalloor.com/destinations",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/kanthal.png",
         width: 1200,
         height: 1200,
         alt: "Kanthalloor Destinations and Sightseeing Attractions",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Top Destinations & Attractions in Kanthalloor & Marayoor",
     description:
       "Guide to top sightseeing spots and nature attractions in Kanthalloor and Marayoor.",
-    images: ["https://ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
   },
 };
 
@@ -43,13 +43,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Destinations",
-      "item": "https://ilovekanthalloor.com/destinations",
+      "item": "https://www.ilovekanthalloor.com/destinations",
     },
   ],
 };

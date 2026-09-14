@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   description:
     "Explore photos of Kanthalloor Jeep Safari trails, mountain viewpoints, comfortable room stays, waterfalls, and scenic nature in the Little Kashmir of Kerala.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/gallery",
+    canonical: "https://www.ilovekanthalloor.com/gallery",
   },
   openGraph: {
     title: "Photo Gallery | Kanthalloor Safari & Stay — Jeep Safaris, Rooms & Nature",
     description:
       "Explore photos of Kanthalloor Jeep Safari trails, mountain viewpoints, comfortable room stays, waterfalls, and scenic nature in the Little Kashmir of Kerala.",
-    url: "https://ilovekanthalloor.com/gallery",
+    url: "https://www.ilovekanthalloor.com/gallery",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/kanthal.png",
         width: 1200,
         height: 1200,
         alt: "Kanthalloor Safari & Stay Photo Gallery",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Photo Gallery | Kanthalloor Safari & Stay",
     description:
       "Photos of Jeep Safari adventures, room stays, and waterfalls in Kanthalloor, Kerala.",
-    images: ["https://ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
   },
 };
 
@@ -43,13 +43,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Gallery",
-      "item": "https://ilovekanthalloor.com/gallery",
+      "item": "https://www.ilovekanthalloor.com/gallery",
     },
   ],
 };

@@ -19,24 +19,24 @@ export const metadata: Metadata = {
   description:
     "Discover Kanthalloor in Idukki, Kerala. Book thrilling Jeep Safari adventures, comfortable rooms and homestays, and authentic nature experiences with trusted local guides.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/",
+    canonical: "https://www.ilovekanthalloor.com/",
   },
   openGraph: {
     title: "Kanthalloor Safari & Stay | Jeep Safari, Rooms & Nature Experience",
     description:
       "Discover Kanthalloor in Idukki, Kerala. Book thrilling Jeep Safari adventures, comfortable rooms and homestays, and authentic nature experiences with trusted local guides.",
-    url: "https://ilovekanthalloor.com/",
+    url: "https://www.ilovekanthalloor.com/",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/kanthal.png",
         width: 1200,
         height: 1200,
         alt: "Kanthalloor Safari & Stay — Jeep Safari and Rooms",
       },
       {
-        url: "https://ilovekanthalloor.com/jeep/jeep0.png",
+        url: "https://www.ilovekanthalloor.com/jeep/jeep0.png",
         width: 1200,
         height: 630,
         alt: "Kanthalloor Jeep Safari — Little Kashmir of Kerala",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Kanthalloor Safari & Stay | Jeep Safari, Rooms & Nature Experience",
     description:
       "Jeep Safari, comfortable rooms and nature experiences in Kanthalloor, Idukki, Kerala.",
-    images: ["https://ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
   },
 };
 
@@ -56,8 +56,8 @@ export default function HomePage() {
   return (
     <>
       <head>
-        <link rel="canonical" href="https://ilovekanthalloor.com/" />
-        <meta property="og:url" content="https://ilovekanthalloor.com/" />
+        <link rel="canonical" href="https://www.ilovekanthalloor.com/" />
+        <meta property="og:url" content="https://www.ilovekanthalloor.com/" />
       </head>
       <Navbar />
       <main className="bg-[#fafbf9] text-gray-800 font-sans antialiased relative z-10">

@@ -9,18 +9,18 @@ export const metadata: Metadata = {
   description:
     "Discover peaceful rooms, scenic resorts, and cozy homestays in Kanthalloor and Marayoor, Idukki, Kerala. Relax amidst nature and picturesque mountain views.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/stay",
+    canonical: "https://www.ilovekanthalloor.com/stay",
   },
   openGraph: {
     title: "Rooms & Stay in Kanthalloor | Resorts, Homestays & Cottages",
     description:
       "Discover peaceful rooms, scenic resorts, and cozy homestays in Kanthalloor and Marayoor, Idukki, Kerala. Relax amidst nature and picturesque mountain views.",
-    url: "https://ilovekanthalloor.com/stay",
+    url: "https://www.ilovekanthalloor.com/stay",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/stays/res1.jpeg",
+        url: "https://www.ilovekanthalloor.com/stays/res1.jpeg",
         width: 1200,
         height: 800,
         alt: "Comfortable rooms and stay in Kanthalloor",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Rooms & Stay in Kanthalloor | Resorts, Homestays & Cottages",
     description:
       "Peaceful mountain stays, homestays, and comfortable cottages in Kanthalloor, Kerala.",
-    images: ["https://ilovekanthalloor.com/stays/res1.jpeg"],
+    images: ["https://www.ilovekanthalloor.com/stays/res1.jpeg"],
   },
 };
 
@@ -44,13 +44,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Rooms & Stay",
-      "item": "https://ilovekanthalloor.com/stay",
+      "item": "https://www.ilovekanthalloor.com/stay",
     },
   ],
 };

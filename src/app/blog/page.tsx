@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   description:
     "Expert travel guides, off-road Jeep Safari tips, seasonal advice, and sightseeing itineraries for visiting Kanthalloor and Marayoor in Idukki, Kerala.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/blog",
+    canonical: "https://www.ilovekanthalloor.com/blog",
   },
   openGraph: {
     title: "Kanthalloor Travel Guide & Blog | Safari Tips, Sightseeing & Stays",
     description:
       "Expert travel guides, off-road Jeep Safari tips, seasonal advice, and sightseeing itineraries for visiting Kanthalloor and Marayoor in Idukki, Kerala.",
-    url: "https://ilovekanthalloor.com/blog",
+    url: "https://www.ilovekanthalloor.com/blog",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/kanthal.png",
         width: 1200,
         height: 1200,
         alt: "Kanthalloor Travel Guide & Blog",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Kanthalloor Travel Guide & Blog",
     description:
       "Travel tips, Jeep Safari advice and destination guides for Kanthalloor, Kerala.",
-    images: ["https://ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
   },
 };
 
@@ -43,13 +43,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://ilovekanthalloor.com/blog",
+      "item": "https://www.ilovekanthalloor.com/blog",
     },
   ],
 };

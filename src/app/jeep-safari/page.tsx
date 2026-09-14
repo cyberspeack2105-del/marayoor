@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   description:
     "Book an unforgettable Jeep Safari in Kanthalloor and Marayoor with Sasikumar. Explore rugged mountain trails, waterfalls, viewpoints, sandalwood forests, and tea valleys.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/jeep-safari",
+    canonical: "https://www.ilovekanthalloor.com/jeep-safari",
   },
   openGraph: {
     title: "Kanthalloor Jeep Safari | Off-Road Mountain Adventure & Packages",
     description:
       "Book an unforgettable Jeep Safari in Kanthalloor and Marayoor with Sasikumar. Explore rugged mountain trails, waterfalls, viewpoints, sandalwood forests, and tea valleys.",
-    url: "https://ilovekanthalloor.com/jeep-safari",
+    url: "https://www.ilovekanthalloor.com/jeep-safari",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/jeep/jeep0.png",
+        url: "https://www.ilovekanthalloor.com/jeep/jeep0.png",
         width: 1200,
         height: 630,
         alt: "Kanthalloor Jeep Safari Off-Road Mountain Tour",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Kanthalloor Jeep Safari | Off-Road Mountain Adventure",
     description:
       "Off-road Jeep Safari in Kanthalloor, Kerala. Mountain viewpoints, waterfalls, and forest trails.",
-    images: ["https://ilovekanthalloor.com/jeep/jeep0.png"],
+    images: ["https://www.ilovekanthalloor.com/jeep/jeep0.png"],
   },
 };
 
@@ -43,13 +43,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Jeep Safari",
-      "item": "https://ilovekanthalloor.com/jeep-safari",
+      "item": "https://www.ilovekanthalloor.com/jeep-safari",
     },
   ],
 };

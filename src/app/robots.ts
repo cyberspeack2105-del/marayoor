@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://ilovekanthalloor.com/sitemap.xml",
+    sitemap: "https://www.ilovekanthalloor.com/sitemap.xml",
   };
 }

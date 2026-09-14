@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   description:
     "Meet Sasikumar and the team at Kanthalloor Safari & Stay. Trusted local guides for off-road Jeep Safari adventures, comfortable rooms, and authentic tours in Kanthalloor, Kerala.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com/about",
+    canonical: "https://www.ilovekanthalloor.com/about",
   },
   openGraph: {
     title: "About Us | Kanthalloor Safari & Stay — Local Guides & Accommodations",
     description:
       "Meet Sasikumar and the team at Kanthalloor Safari & Stay. Trusted local guides for off-road Jeep Safari adventures, comfortable rooms, and authentic tours in Kanthalloor, Kerala.",
-    url: "https://ilovekanthalloor.com/about",
+    url: "https://www.ilovekanthalloor.com/about",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
       {
-        url: "https://ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/kanthal.png",
         width: 1200,
         height: 1200,
         alt: "About Kanthalloor Safari & Stay",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "About Us | Kanthalloor Safari & Stay",
     description:
       "Meet Sasikumar and the local team behind Kanthalloor Safari & Stay in Idukki, Kerala.",
-    images: ["https://ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
   },
 };
 
@@ -43,13 +43,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://ilovekanthalloor.com/",
+      "item": "https://www.ilovekanthalloor.com/",
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "About Us",
-      "item": "https://ilovekanthalloor.com/about",
+      "item": "https://www.ilovekanthalloor.com/about",
     },
   ],
 };

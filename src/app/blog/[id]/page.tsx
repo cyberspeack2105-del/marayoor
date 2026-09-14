@@ -166,7 +166,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const post = ARTICLES[id];
   if (!post) return { title: "Article Not Found | Kanthalloor Safari & Stay" };
-  const url = `https://ilovekanthalloor.com/blog/${post.id}`;
+  const url = `https://www.ilovekanthalloor.com/blog/${post.id}`;
   return {
     title: `${post.title} — Travel Guide`,
     description: post.excerpt,
@@ -210,19 +210,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
     "author": {
       "@type": "Organization",
       "name": "Kanthalloor Safari & Stay",
-      "url": "https://ilovekanthalloor.com",
+      "url": "https://www.ilovekanthalloor.com",
     },
     "publisher": {
       "@type": "Organization",
       "name": "Kanthalloor Safari & Stay",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ilovekanthalloor.com/kanthal.png",
+        "url": "https://www.ilovekanthalloor.com/kanthal.png",
       },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://ilovekanthalloor.com/blog/${post.id}`,
+      "@id": `https://www.ilovekanthalloor.com/blog/${post.id}`,
     },
   };
 
@@ -234,19 +234,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://ilovekanthalloor.com/",
+        "item": "https://www.ilovekanthalloor.com/",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://ilovekanthalloor.com/blog",
+        "item": "https://www.ilovekanthalloor.com/blog",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://ilovekanthalloor.com/blog/${post.id}`,
+        "item": `https://www.ilovekanthalloor.com/blog/${post.id}`,
       },
     ],
   };

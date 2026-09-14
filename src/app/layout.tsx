@@ -3,7 +3,7 @@ import "./globals.css";
 import BackgroundParticles from "@/components/BackgroundParticles";
 import GlobalFloating from "@/components/GlobalFloating";
 
-const SITE_URL  = "https://ilovekanthalloor.com";
+const SITE_URL  = "https://www.ilovekanthalloor.com";
 const SITE_NAME = "Kanthalloor Safari & Stay";
 const OG_IMAGE  = `${SITE_URL}/kanthal.png`;
 

@@ -142,13 +142,13 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://ilovekanthalloor.com"
+                  href="https://www.ilovekanthalloor.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 text-sm text-gray-500 hover:text-[#1a4329] transition-colors"
                 >
                   <i className="fas fa-globe text-[#1a4329] flex-shrink-0" />
-                  <span>ilovekanthalloor.com</span>
+                  <span>www.ilovekanthalloor.com</span>
                 </a>
               </li>
               <li>
@@ -186,10 +186,10 @@ export default function Footer() {
               More Than a Trip. A Kanthalloor Experience.
             </p>
             <a
-              href="https://ilovekanthalloor.com"
+              href="https://www.ilovekanthalloor.com"
               className="text-xs text-gray-400 hover:text-[#1a4329] transition-colors order-3"
             >
-              ilovekanthalloor.com
+              www.ilovekanthalloor.com
             </a>
           </div>
         </div>
