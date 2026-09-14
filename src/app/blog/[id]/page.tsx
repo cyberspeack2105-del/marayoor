@@ -158,14 +158,40 @@ const ARTICLES: Record<string, BlogPostData> = {
   },
 };
 
+export function generateStaticParams() {
+  return Object.keys(ARTICLES).map((id) => ({ id }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
   const post = ARTICLES[id];
-  if (!post) return { title: "Article Not Found | Marayoor" };
+  if (!post) return { title: "Article Not Found | Kanthalloor Safari & Stay" };
+  const url = `https://ilovekanthalloor.com/blog/${post.id}`;
   return {
-    title: `${post.title} | Marayoor Travel Guide`,
+    title: `${post.title} — Travel Guide`,
     description: post.excerpt,
-    openGraph: { title: post.title, description: post.excerpt, images: [{ url: post.image }] },
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${post.title} | Kanthalloor Travel Guide`,
+      description: post.excerpt,
+      url,
+      type: "article",
+      siteName: "Kanthalloor Safari & Stay",
+      images: [
+        {
+          url: post.image,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
   };
 }
 
@@ -174,9 +200,69 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   const post = ARTICLES[id];
   if (!post) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.image,
+    "datePublished": "2025-08-01T00:00:00+05:30",
+    "author": {
+      "@type": "Organization",
+      "name": "Kanthalloor Safari & Stay",
+      "url": "https://ilovekanthalloor.com",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kanthalloor Safari & Stay",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ilovekanthalloor.com/kanthal.png",
+      },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://ilovekanthalloor.com/blog/${post.id}`,
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ilovekanthalloor.com",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://ilovekanthalloor.com/blog",
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://ilovekanthalloor.com/blog/${post.id}`,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
+
       <main className="bg-[#fafbf9] text-gray-800 font-sans antialiased">
 
         {/* Hero */}

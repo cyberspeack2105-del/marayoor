@@ -5,14 +5,63 @@ import { StayCard } from "@/components/StayCard";
 import { STAYS_DATA } from "@/lib/staysData";
 
 export const metadata: Metadata = {
-  title: "Rooms & Stays in Marayoor — Resorts, Homestays & Cottages",
+  title: "Rooms & Stay — Resorts, Homestays & Cottages in Kanthalloor",
   description:
-    "Discover peaceful mountain stays, homestays, treehouses, and comfortable cottages in Marayoor, Kerala. Book direct with our local team.",
+    "Discover peaceful rooms, scenic resorts, and cozy homestays in Kanthalloor and Marayoor, Idukki, Kerala. Relax amidst nature and picturesque mountain views.",
+  alternates: {
+    canonical: "https://ilovekanthalloor.com/stay",
+  },
+  openGraph: {
+    title: "Rooms & Stay in Kanthalloor | Resorts, Homestays & Cottages",
+    description:
+      "Discover peaceful rooms, scenic resorts, and cozy homestays in Kanthalloor and Marayoor, Idukki, Kerala. Relax amidst nature and picturesque mountain views.",
+    url: "https://ilovekanthalloor.com/stay",
+    siteName: "Kanthalloor Safari & Stay",
+    type: "website",
+    images: [
+      {
+        url: "https://ilovekanthalloor.com/stays/res1.jpeg",
+        width: 1200,
+        height: 800,
+        alt: "Comfortable rooms and stay in Kanthalloor",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rooms & Stay in Kanthalloor | Resorts, Homestays & Cottages",
+    description:
+      "Peaceful mountain stays, homestays, and comfortable cottages in Kanthalloor, Kerala.",
+    images: ["https://ilovekanthalloor.com/stays/res1.jpeg"],
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ilovekanthalloor.com",
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Rooms & Stay",
+      "item": "https://ilovekanthalloor.com/stay",
+    },
+  ],
 };
 
 export default function StayPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       <main className="bg-[#fafbf9] text-gray-800 font-sans antialiased">
 
@@ -21,7 +70,7 @@ export default function StayPage() {
           <div className="absolute inset-0">
             <img
               src="/stays/res1.jpeg"
-              alt="Peaceful stays in Marayoor"
+              alt="Peaceful rooms and stays in Kanthalloor"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-[#112918]/80" />
@@ -34,7 +83,7 @@ export default function StayPage() {
               Rooms &amp; Stay
             </h1>
             <p className="text-gray-200 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-              Comfortable and relaxing stays amidst nature — from cozy homestays to scenic mountain resorts.
+              Comfortable and relaxing stays amidst nature — from cozy homestays to scenic mountain resorts in Kanthalloor.
             </p>
           </div>
         </section>
@@ -63,7 +112,7 @@ export default function StayPage() {
           <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl text-center py-14 px-6 sm:px-12">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKkYse9aOTQwlEsHd9SMjTBx5MixGx0JPiosWBGR5Lg_eX5IulV5lJYcqHUcyRJNNa2X-rOchZ134P9X45thiess2OZQjOnzF2NJCnAtUgzZVooXzSZqZWJH5EvLZQ1w6NMiN80IdNbKODmeP2meyDobtlJ5AQLEO9bXNTAAEdH3RpxyML5o1vqqRXPMCBu5Ym_0QCffKmQwN6dC4YWI6_-SR7UxlO0f6f--cANqDwgRinq-dXtb7J"
-              alt="Marayoor background"
+              alt="Scenic Kanthalloor landscape background"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-[#122e1b]/85 backdrop-blur-[2px]" />

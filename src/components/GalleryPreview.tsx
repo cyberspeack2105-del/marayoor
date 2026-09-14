@@ -204,7 +204,7 @@ export default function GalleryPreview() {
                   className={`flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden border-2 transition-all ${
                     i === lightbox ? "border-[#4ade80] scale-110" : "border-transparent opacity-50 hover:opacity-100"
                   }`}>
-                  <img src={img.src} alt="" className="w-full h-full object-cover"
+                  <img src={img.src} alt={img.title || "Kanthalloor gallery photo thumbnail"} className="w-full h-full object-cover"
                     onError={(e) => { (e.target as HTMLImageElement).src = "/jeep/jeep0.png"; }} />
                 </button>
               ))}
