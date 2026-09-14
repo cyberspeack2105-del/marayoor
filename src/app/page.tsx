@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description:
     "Discover Kanthalloor in Idukki, Kerala. Book thrilling Jeep Safari adventures, comfortable rooms and homestays, and authentic nature experiences with trusted local guides.",
   alternates: {
-    canonical: "https://ilovekanthalloor.com",
+    canonical: "https://ilovekanthalloor.com/",
   },
   openGraph: {
     title: "Kanthalloor Safari & Stay | Jeep Safari, Rooms & Nature Experience",
     description:
       "Discover Kanthalloor in Idukki, Kerala. Book thrilling Jeep Safari adventures, comfortable rooms and homestays, and authentic nature experiences with trusted local guides.",
-    url: "https://ilovekanthalloor.com",
+    url: "https://ilovekanthalloor.com/",
     siteName: "Kanthalloor Safari & Stay",
     type: "website",
     images: [
@@ -55,6 +55,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      <head>
+        <link rel="canonical" href="https://ilovekanthalloor.com/" />
+        <meta property="og:url" content="https://ilovekanthalloor.com/" />
+      </head>
       <Navbar />
       <main className="bg-[#fafbf9] text-gray-800 font-sans antialiased relative z-10">
         {/* 1. Hero */}

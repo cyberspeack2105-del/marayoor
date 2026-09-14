@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
   /* ── Canonical / robots ── */
   alternates: {
-    canonical: SITE_URL,
+    canonical: `${SITE_URL}/`,
   },
   robots: {
     index:                    true,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type:        "website",
     locale:      "en_IN",
-    url:         SITE_URL,
+    url:         `${SITE_URL}/`,
     siteName:    SITE_NAME,
     title:       "Kanthalloor Safari & Stay | Jeep Safari, Rooms & Nature Experience",
     description:

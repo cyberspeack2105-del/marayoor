@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     /* ── Core pages ── */
     {
-      url:             BASE,
+      url:             `${BASE}/`,
       lastModified:    now,
       changeFrequency: "weekly",
       priority:        1.0,
