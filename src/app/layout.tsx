@@ -81,22 +81,22 @@ export const metadata: Metadata = {
     images:      [OG_IMAGE],
   },
 
-  /* ── Favicon / icons ── */
+  /* ── Favicon / icons — using Kanthalloor official logo ── */
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/logo2.png", sizes: "any",   type: "image/png" },
+      { url: "/logo2.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo2.png", sizes: "16x16", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/logo2.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: ["/favicon.ico"],
+    shortcut: ["/logo2.png"],
   },
 
   other: {
     "msapplication-TileColor": "#112918",
-    "msapplication-TileImage": "/apple-touch-icon.png",
+    "msapplication-TileImage": "/logo2.png",
   },
 };
 
@@ -186,11 +186,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
-        {/* Favicon links */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        {/* Favicon — Kanthalloor official logo (logo2.png) */}
+        <link rel="icon" href="/logo2.png" type="image/png" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo2.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/logo2.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo2.png" />
         {/* JSON-LD Schema */}
         <script
           type="application/ld+json"

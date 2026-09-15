@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 
 const JEEP_SLIDES = [
   "/jeep/jeep0.png",
-  "/jeep/jeep1.jpeg",
   "/jeep/jeep2.jpeg",
   "/jeep/jeep3.jpeg",
   "/jeep/jeep4.jpeg",

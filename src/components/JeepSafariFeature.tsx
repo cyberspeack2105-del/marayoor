@@ -6,7 +6,6 @@ const WA = "https://wa.me/919188211822?text=Hi%2C%20I%20would%20like%20to%20enqu
 
 const JEEP_IMAGES = [
   "/jeep/jeep0.png",
-  "/jeep/jeep1.jpeg",
   "/jeep/jeep2.jpeg",
   "/jeep/jeep3.jpeg",
   "/jeep/jeep4.jpeg",

@@ -54,7 +54,18 @@ const breadcrumbSchema = {
   ],
 };
 
-export default function ContactPage() {
+export const metadata: Metadata = {
+  title: "Contact Kanthalloor Safari & Stay | Plan Your Trip to Kanthalloor",
+  description:
+    "Contact Sasikumar at Kanthalloor Safari & Stay to plan your Jeep Safari, room booking or local experience. Call, WhatsApp or message us — we reply fast.",
+  alternates: { canonical: "https://www.ilovekanthalloor.com/contact" },
+  openGraph: {
+    title:       "Contact Kanthalloor Safari & Stay",
+    description: "Get in touch to plan your Kanthalloor Jeep Safari trip, room stay or local experience. We're happy to help.",
+    url:         "https://www.ilovekanthalloor.com/contact",
+    images:      [{ url: "https://www.ilovekanthalloor.com/jeep/jeep0.png", alt: "Kanthalloor Safari contact" }],
+  },
+};
   return (
     <>
       <script
