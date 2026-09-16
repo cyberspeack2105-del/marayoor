@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import DestinationsClient from "@/components/DestinationsClient";
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/logo2.png",
         width: 1200,
         height: 1200,
         alt: "Kanthalloor Destinations and Sightseeing Attractions",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Top Destinations & Attractions in Kanthalloor & Marayoor",
     description:
       "Guide to top sightseeing spots and nature attractions in Kanthalloor and Marayoor.",
-    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/logo2.png"],
   },
 };
 
@@ -69,3 +69,4 @@ export default function DestinationsPage() {
     </>
   );
 }
+

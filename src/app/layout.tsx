@@ -1,11 +1,11 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import BackgroundParticles from "@/components/BackgroundParticles";
 import GlobalFloating from "@/components/GlobalFloating";
 
 const SITE_URL  = "https://www.ilovekanthalloor.com";
 const SITE_NAME = "Kanthalloor Safari & Stay";
-const OG_IMAGE  = `${SITE_URL}/kanthal.png`;
+const OG_IMAGE  = `${SITE_URL}/logo2.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -122,9 +122,9 @@ const jsonLd = {
       url: SITE_URL,
       description:
         "Kanthalloor Safari & Stay offers guided off-road Jeep Safari adventures, comfortable mountain room stays, and authentic nature experiences in Kanthalloor and Marayoor, Idukki, Kerala.",
-      logo: `${SITE_URL}/kanthal.png`,
+      logo: `${SITE_URL}/logo2.png`,
       image: [
-        `${SITE_URL}/kanthal.png`,
+        `${SITE_URL}/logo2.png`,
         `${SITE_URL}/jeep/jeep0.png`,
       ],
       telephone: "+91-82811-41813",
@@ -205,3 +205,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.ilovekanthalloor.com/kanthal.png",
+        url: "https://www.ilovekanthalloor.com/logo2.png",
         width: 1200,
         height: 1200,
         alt: "Kanthalloor Safari & Stay — Jeep Safari and Rooms",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Kanthalloor Safari & Stay | Jeep Safari, Rooms & Nature Experience",
     description:
       "Jeep Safari, comfortable rooms and nature experiences in Kanthalloor, Idukki, Kerala.",
-    images: ["https://www.ilovekanthalloor.com/kanthal.png"],
+    images: ["https://www.ilovekanthalloor.com/logo2.png"],
   },
 };
 
@@ -89,3 +89,4 @@ export default function HomePage() {
     </>
   );
 }
+
