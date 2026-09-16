@@ -41,8 +41,8 @@ export default function Footer() {
             {/* Social */}
             <div className="flex items-center gap-2 flex-wrap">
               {[
-                { icon: "fab fa-instagram",  label: "Instagram", href: "#" },
-                { icon: "fab fa-facebook-f", label: "Facebook",  href: "#" },
+                { icon: "fab fa-instagram",  label: "Instagram", href: "https://www.instagram.com/ilovekanthalloor" },
+                { icon: "fab fa-facebook-f", label: "Facebook",  href: "https://www.facebook.com/ilovekanthalloor" },
                 { icon: "fab fa-youtube",    label: "YouTube",   href: "#" },
                 { icon: "fab fa-whatsapp",   label: "WhatsApp",  href: WA  },
                 { icon: "fab fa-google",     label: "Google",    href: GMB },
