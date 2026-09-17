@@ -3,6 +3,20 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      /* ── non-www → www (canonical domain redirect) ── */
+      /* Preserves path and query string. 301 permanent. */
+      {
+        source:      "/:path*",
+        has: [
+          {
+            type:  "host",
+            value: "ilovekanthalloor.com",
+          },
+        ],
+        destination: "https://www.ilovekanthalloor.com/:path*",
+        permanent:   true,
+      },
+
       /* ── /rooms → /stay (legacy) ── */
       {
         source:      "/rooms",

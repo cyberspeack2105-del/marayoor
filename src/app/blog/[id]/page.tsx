@@ -217,7 +217,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
       "name": "Kanthalloor Safari & Stay",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.ilovekanthalloor.com/kanthal.png",
+        "url": "https://www.ilovekanthalloor.com/logo2.png",
       },
     },
     "mainEntityOfPage": {

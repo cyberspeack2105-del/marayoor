@@ -55,10 +55,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <head>
-        <link rel="canonical" href="https://www.ilovekanthalloor.com/" />
-        <meta property="og:url" content="https://www.ilovekanthalloor.com/" />
-      </head>
       <Navbar />
       <main className="bg-[#fafbf9] text-gray-800 font-sans antialiased relative z-10">
         {/* 1. Hero */}
